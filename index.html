@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- スマホ対応に必要な設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ジュンのプロフィール</title>
+
+  <!-- 親しみやすいフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSSフォルダ内のstyle.cssを読み込む -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+  <!-- 
+       ① トップページ
+       画像の場所：
+       imagesフォルダに img_umi1.jpeg (唐津市浜玉町浜崎の海岸の夕日)を入れる。
+       背景画像はstyle.cssの .hero で指定。
+   -->
+  <header class="hero">
+    <div class="hero-overlay">
+
+      <p class="hero-label">PROFILE SITE</p>
+
+      <h1>こんにちは、ジュンです。</h1>
+
+      <p class="hero-copy">
+        数か月間、一緒に授業を受けてきた皆さんへ。<br>
+        このサイトでは、趣味や好きな作品、音楽などを紹介しています。<br>
+        気軽に見ていただけたらうれしいです。
+      </p>
+
+      <a class="hero-button" href="#about">
+        自己紹介を見る
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- 
+       上部メニュー
+       クリックすると各項目へ移動。
+   -->
+
+  <nav class="page-nav" aria-label="画像付きページ内メニュー">
+    <ul>
+
+      <li>
+        <a href="#about">
+          <img src="img/img_2101.jpeg" alt="日吉潤の顔">
+          <span>自己紹介</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#places">
+          <img src="img/img_0986.jpeg" alt="ベランダからの夕日の写真、黄砂多めの日にの撮影">
+          <span>住んだ場所</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#gallery">
+          <img src="img/img_ityounoki.jpeg" alt="東京に観光した際の並木道">
+          <span>写真</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#hobby">
+          <img src="img/img_sakura.jpeg" alt="西公園の桜の写真">
+          <span>趣味</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#works">
+          <img src="img/img_2106.jpeg" alt="金曜ロードショーのオープニング">
+          <span>好きな作品</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#music">
+          <img src="img/img_2108.jpeg" alt="フリー素材から音符のイラスト">
+          <span>好きな音楽</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#goal">
+          <img src="img/img_umi2.jpeg" alt="虹の松原の海側の夕日">
+          <span>将来の目標</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- 
+         ② 自己紹介
+     -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <p class="section-kicker">ABOUT ME</p>
+        <h2>自己紹介</h2>
+
+        <div class="intro-card">
+          <h3>学生（プログラミングを勉強中です）</h3>
+
+          <p>
+            こんにちは、ジュンです。<br>
+            現在、プログラミングを勉強している学生です。
+          </p>
+
+          <p>
+            このページは、HTMLとCSSの練習として作成しました。<br>
+            まだ初心者ですが、少しずつできることを増やしながら、
+            これからもっと学んでいきたいと思っています。
+          </p>
+
+          <p>
+            普段の授業では伝わりにくい趣味や好きな作品、
+            写真などを通して、自分のことを知ってもらえたらうれしいです。
+          </p>
+
+          <div class="profile-points">
+            <p><strong>名前：</strong>ジュン</p>
+            <p><strong>出身：</strong>鹿児島県</p>
+            <p><strong>現在：</strong>福岡県で生活しています</p>
+            <p><strong>勉強中：</strong>HTML・CSS・Pythonなど</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 
+         これまで住んだ場所
+     -->
+    <section class="section section-dark" id="places">
+      <div class="container">
+
+        <p class="section-kicker section-kicker-light">PLACES</p>
+        <h2 class="light-heading">これまで住んだ場所</h2>
+
+        <div class="place-list">
+          <article class="place-card">
+            <span></span>
+            <h3>鹿児島県</h3>
+            <p>出身地です。自然が多く、食べ物もおいしい場所です。</p>
+          </article>
+
+          <article class="place-card">
+            <span></span>
+            <h3>福岡県柳川市</h3>
+            <p>水郷の景色が印象的な場所です。</p>
+          </article>
+
+          <article class="place-card">
+            <span></span>
+            <h3>佐賀県唐津市</h3>
+            <p>海が近く、景色のきれいな場所です。</p>
+          </article>
+
+          <article class="place-card">
+            <span></span>
+            <h3>福岡市</h3>
+            <p>現在生活している地域です。</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 
+     ③ 写真ギャラリー
+     画像はimgフォルダに入れる。
+　　　 -->
+
+    <section class="section" id="gallery">
+      <div class="container">
+
+        <p class="section-kicker">MY PHOTOS</p>
+        <h2>写真ギャラリー</h2>
+
+        <p class="section-lead">
+          スマホの写真を絞り出してみました。
+        </p>
+
+        <ul class="gallery-list">
+
+          <!-- 画像1：観葉植物 -->
+          <li>
+            <img src="img/img_syokubutu.jpeg" alt="現在育てている観葉植物">
+
+            <div class="gallery-text">
+              <h3>観葉植物</h3>
+
+              <p>
+                現在育てている観葉植物です。<br>
+                少しずつ成長する様子を見るのが楽しみです。<br>
+                そろそろ植え替えの時期かもしれません。
+
+              </p>
+            </div>
+          </li>
+
+
+          <!-- 画像2：東京の街 -->
+          <li>
+            <img src="img/img_toukyo.jpeg" alt="東京の街の写真">
+
+            <div class="gallery-text">
+              <h3>街を歩いた日</h3>
+
+              <p>
+                数年前に東京を訪れたときの一枚です。<br>
+                人の多さや街の活気に圧倒されました!
+
+
+              </p>
+            </div>
+          </li>
+
+
+          <!-- 画像3：競技場 -->
+          <li>
+            <img src="img/img_kyougijyou.jpeg" alt="印象に残った建物">
+
+            <div class="gallery-text">
+              <h3>印象に残った建物</h3>
+
+              <p>
+                建物のデザインがとても印象的でした。<br>
+                時間が限られていたので外観だけ撮影しました。 <br>
+                次はゆっくり見学してみたいです。
+
+              </p>
+            </div>
+          </li>
+
+
+          <!-- 画像4：並木道 -->
+          <li>
+            <img src="img/img_ityounoki.jpeg" alt="散歩中に見つけた並木道">
+
+            <div class="gallery-text">
+              <h3>散歩で見つけた景色</h3>
+
+              <p>
+                散歩中に見つけたお気に入りの並木道です。<br>
+                新緑もきれいですが、紅葉の季節も楽しみにしています。
+
+              </p>
+            </div>
+          </li>
+
+
+          <!-- 画像5：東京の景色 -->
+          <li>
+            <img src="img/img_tawa.jpeg" alt="高い場所から見た街並み">
+
+            <div class="gallery-text">
+              <h3>街の景色</h3>
+
+              <p>
+                高い場所から見た景色です。<br>
+                高い所は少し苦手ですが、思わず撮影したくなる景色でした。
+
+              </p>
+            </div>
+          </li>
+
+
+          <!-- 画像6：集合写真 -->
+          <li>
+            <img src="img/img_nomikai.jpeg" alt="一緒に過ごした時間の写真">
+
+            <div class="gallery-text">
+              <h3>一緒に過ごした時間</h3>
+
+              <p>
+                一緒に頑張ってきた戦友との一枚です。<br>
+                良い思い出として残っています。
+
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- 
+         ④ 趣味・好きなもの
+     -->
+    <section class="section section-soft" id="hobby">
+      <div class="container">
+
+        <p class="section-kicker">HOBBY</p>
+        <h2>趣味・好きなもの</h2>
+
+        <div class="two-column">
+
+          <article class="simple-card">
+            <h3>趣味</h3>
+
+            <ul class="center-list">
+              <li>映画鑑賞</li>
+              <li>Netflix・Amazon Prime Videoの鑑賞</li>
+              <li>音楽鑑賞</li>
+              <li>テニス</li>
+              <li>釣り</li>
+              <li>散歩</li>
+              <li>ツーリング</li>
+              <li>ドローン</li>
+              <li>エアガン</li>
+              <li>グランツーリスモ7</li>
+              <li>ゆるコンピュータ科学ラジオ・ゆる言語学ラジオ</li>
+            </ul>
+          </article>
+
+          <article class="simple-card">
+            <h3>好きな食べ物・飲み物</h3>
+
+            <ul class="center-list">
+              <li>ビール</li>
+              <li>枝豆</li>
+              <li>唐揚げ</li>
+              <li>焼き鳥</li>
+              <li>ピザ</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 
+         ⑤ 好きな作品
+         作品名をクリックすると感想と内容が開きます。
+     -->
+    <section class="section section-cinema" id="works">
+      <div class="container">
+
+        <p class="section-kicker section-kicker-gold">FAVORITE WORKS</p>
+        <h2 class="light-heading">好きな作品</h2>
+
+        <p class="section-lead section-lead-light">
+          ジャンルをクリックし、次に作品名をクリックしてください。
+        </p>
+
+
+        <!-- 映画 -->
+        <details class="genre-card">
+          <summary class="genre-title">映画</summary>
+
+          <div class="genre-content">
+
+            <details class="subgenre-card">
+              <summary>アクション・冒険</summary>
+
+              <div class="works-list">
+
+                <details class="work-card">
+                  <summary>世界最速のインディアン</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>「夢を追うのに年齢は関係ない」というメッセージが心に残る作品です。周囲への感謝を忘れず、夢に挑戦し続ける主人公の姿に勇気をもらい、「今からでも遅くない」と前向きな気持ちになれる映画でした。</p>
+                    <p><strong>内容：</strong>『世界最速のインディアン』は、63歳のバート・マンローが愛車「インディアン」で世界最速記録に挑戦する実話です。困難に負けず、夢を追い続ける姿が描かれた感動の映画です。</p>
+                  </div>
+                </details>
+
+                <details class="work-card">
+                  <summary>パイレーツ・オブ・カリビアン</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>ユーモアと冒険が絶妙で何度も楽しめます。</p>
+                    <p><strong>内容：</strong>海賊ジャック・スパロウが伝説の財宝や呪いに挑みます。</p>
+                  </div>
+                </details>
+
+                <details class="work-card">
+                  <summary>ワイルド・スピード</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>カーアクションの迫力と仲間の絆が魅力です。</p>
+                    <p><strong>内容：</strong>車を愛する仲間たちが危機へ立ち向かいます。</p>
+                  </div>
+                </details>
+
+                <details class="work-card">
+                  <summary>レオン</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>登場人物の関係や心情の変化が印象的です。</p>
+                    <p><strong>内容：</strong>孤独な殺し屋と少女が心を通わせていく物語です。</p>
+                  </div>
+                </details>
+
+              </div>
+            </details>
+
+
+            <details class="subgenre-card">
+              <summary>SF・近未来</summary>
+
+              <div class="works-list">
+
+                <details class="work-card">
+                  <summary>オブリビオン</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>映像が美しく、静かな世界観が魅力です。</p>
+                    <p><strong>内容：</strong>地球最後の保守員が世界の秘密を知っていきます。</p>
+                  </div>
+                </details>
+
+                <details class="work-card">
+                  <summary>マトリックス</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>独創的な世界観とアクションが好きです。</p>
+                    <p><strong>内容：</strong>世界の秘密を知った主人公が支配する存在へ立ち向かいます。</p>
+                  </div>
+                </details>
+
+                <details class="work-card">
+                  <summary>メン・イン・ブラック</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>SFとコメディのバランスが良く、何度見ても楽しめます。</p>
+                    <p><strong>内容：</strong>宇宙人を秘密裏に管理するエージェントたちの物語です。</p>
+                  </div>
+                </details>
+
+                <details class="work-card">
+                  <summary>バック・トゥ・ザ・フューチャー</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>何度見ても楽しめる名作です。</p>
+                    <p><strong>内容：</strong>高校生がタイムマシンで過去へ移動します。</p>
+                  </div>
+                </details>
+
+              </div>
+            </details>
+
+
+            <details class="subgenre-card">
+              <summary>サスペンス・心理</summary>
+
+              <div class="works-list">
+
+                <details class="work-card">
+                  <summary>セブン</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>重い雰囲気と緊張感が強く印象に残ります。</p>
+                    <p><strong>内容：</strong>二人の刑事が連続事件を追うサスペンス作品です。</p>
+                  </div>
+                </details>
+
+                <details class="work-card">
+                  <summary>ファイト・クラブ</summary>
+                  <div class="work-text">
+                    <p><strong>感想：</strong>物語の見え方が変わる展開が印象的です。</p>
+                    <p><strong>内容：</strong>変化のない生活に悩む男性が秘密の集まりを始めます。</p>
+                  </div>
+                </details>
+
+              </div>
+            </details>
+
+          </div>
+        </details>
+
+
+        <!-- 海外ドラマ -->
+        <details class="genre-card">
+          <summary class="genre-title">海外ドラマ</summary>
+
+          <div class="genre-content">
+
+            <details class="work-card">
+              <summary>ブレイキング・バッド</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>主人公が少しずつ変わっていく姿が印象的で、善悪について考えさせられる作品でした。緊張感のある展開が続き、最後まで引き込まれる名作です。</p>
+                <p><strong>内容：</strong>余命宣告を受けた高校の化学教師が、家族のために違法薬物の製造へ手を染め、次第に犯罪の世界へ深くのめり込んでいく物語です。</p>
+            </details>
+
+
+            <details class="work-card">
+              <summary>Mr. Robot（ミスター・ロボット）</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>ハッキングだけでなく、人間の心理や社会問題も深く描かれており、最後まで展開が読めない作品でした。考えさせられる場面が多く、見応えのあるドラマです。</p>
+                <p><strong>内容：</strong>天才的なハッカーの主人公エリオットが、巨大企業を相手にサイバー攻撃を仕掛け、社会を変えようとするサスペンスドラマです。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>セレブリティ</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>SNSの華やかな世界の裏側や、人間関係の怖さをリアルに描いた作品でした。人気やフォロワー数だけでは測れない本当の価値を考えさせられ、最後まで展開が読めない作品でした。</p>
+                <p><strong>内容：</strong>平凡な女性がSNSをきっかけに人気インフルエンサーとなり、華やかな世界へ飛び込む物語です。しかし、その裏には嫉妬や裏切り、欲望が渦巻いており、SNS社会の光と闇が描かれます。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>地獄に落ちるわよ</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>圧倒的なカリスマ性と成功の裏にある光と闇が印象的でした。人の欲望や権力の怖さを考えさせられる作品でした。</p>
+                <p><strong>内容：</strong>「地獄に堕ちるわよ！」の決め台詞で一世を風靡した占い師・細木数子の人生をモデルに、成功の裏にある欲望や人間関係、数々の真実を描いたヒューマンドラマです。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>サラ・キムという女</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>ブランド品の価値だけでなく、人の欲望や見栄の怖さを考えさせられる作品でした。先の読めない展開が続き、最後まで引き込まれるドラマです。</p>
+                <p><strong>内容：</strong>高級ブランドの世界で別人として生きる女性の秘密と、殺人事件の真相を描いた韓国ミステリーです。本物と偽物、欲望や嘘が交錯するサスペンスが展開されます。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>クイーンズ・ギャンビット</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>チェスを知らなくても楽しめる作品でした。努力と成長、仲間の支えの大切さが描かれており、最後まで夢を追い続ける主人公の姿に勇気をもらえる感動作です。</p>
+                <p><strong>内容：</strong>孤児院で育った少女ベスが、天才的なチェスの才能を開花させ、さまざまな困難や葛藤を乗り越えながら世界一を目指す物語です。</p>
+              </div>
+            </details>
+
+          </div>
+        </details>
+
+
+        <!-- アニメ -->
+        <details class="genre-card">
+          <summary class="genre-title">アニメ</summary>
+
+          <div class="genre-content">
+
+
+            <details class="work-card">
+              <summary>東のエデン</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>先の読めない展開と社会問題を織り交ぜたストーリーが魅力です。謎が少しずつ明らかになる展開に引き込まれ、考察も楽しめる作品でした。</p>
+                <p><strong>内容：</strong>記憶を失った青年・滝沢朗が、日本を救う使命を託された「セレソン」として、仲間とともに巨大な陰謀へ立ち向かうサスペンス作品です。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>攻殻機動隊</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>近未来の世界観と考えさせられるテーマが魅力です。</p>
+                <p><strong>内容：</strong>公安組織がサイバー犯罪へ立ち向かいます。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>PSYCHO-PASS サイコパス</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>正義や社会の仕組みについて考えさせられます。</p>
+                <p><strong>内容：</strong>人の心理状態を数値化する社会で刑事たちが犯罪を追います。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>ヴァイオレット・エヴァーガーデン</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>美しい映像と繊細な心理描写が心に残る作品です。一人ひとりの想いが丁寧に描かれ、思わず涙する場面も多い感動作でした。</p>
+                <p><strong>内容：</strong>戦争で感情を知らずに育った少女ヴァイオレットが、手紙の代筆を通して人々の想いに触れ、「愛してる」の意味を探していく物語です。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>新世紀エヴァンゲリオン</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>ロボットアニメの枠を超えた心理描写と哲学的なテーマが魅力です。見る人によって解釈が変わるほど考察要素が多く、何度見ても新しい発見がある名作だと感じました。</p>
+                <p><strong>内容：</strong>人類を襲う「使徒」に対抗するため、少年たちがエヴァンゲリオンに乗り戦います。戦いを通して、それぞれの心の葛藤や人類の運命が描かれます。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>HUNTER×HUNTER ハンターハンター</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>頭脳戦や心理戦が特に好きです。</p>
+                <p><strong>内容：</strong>少年ゴンが仲間と冒険する物語です。</p>
+              </div>
+            </details>
+
+<details class="work-card">
+              <summary>キングダム</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>迫力ある戦闘や仲間との成長、熱い人間ドラマが魅力です。夢に向かって努力する姿に勇気をもらえる作品です。</p>
+                <p><strong>内容：</strong>戦災孤児の少年・信が、天下の大将軍を目指し、後の始皇帝となる嬴政（えいせい）とともに中華統一を目指す物語です。</p>
+              </div>
+            </details>
+
+<details class="work-card">
+              <summary>ライジングインパクト</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>ゴルフの才能を持つ少年・ガウェインが、仲間やライバルと切磋琢磨しながら世界一のプロゴルファーを目指して成長していく物語です。</p>
+                <p><strong>内容：</strong>個性豊かなライバルたちとの熱い勝負や成長する姿が魅力です。ゴルフを知らなくても楽しめる、爽快感のあるスポーツアニメです。</p>
+              </div>
+            </details>
+
+<details class="work-card">
+              <summary>BLACK LAGOON ブラック・ラグーン</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>迫力ある銃撃戦と個性豊かな登場人物が魅力で、ハードな世界観に引き込まれました。ロックの成長や葛藤も見どころです。</p>
+                <p><strong>内容：</strong>日本の会社員ロックが運び屋チーム「ラグーン商会」の一員となり、犯罪都市ロアナプラで危険な依頼や裏社会の抗争に巻き込まれていくガンアクション作品です。</p>
+              </div>
+            </details>
+
+<details class="work-card">
+              <summary>ヨルムンガンド</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>迫力ある戦闘シーンだけでなく、武器や平和について考えさせられる奥深い物語でした。個性的な仲間たちとのやり取りも魅力です。</p>
+                <p><strong>内容：</strong>武器商人ココ・ヘクマティアルと、その護衛部隊、そして武器を憎む元少年兵ヨナが世界各地を巡り、戦争や国際情勢に関わる任務を描くガンアクション作品です。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>メイドインアビス</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>美しい世界観と予想を超える展開が印象的です。</p>
+                <p><strong>内容：</strong>巨大な縦穴の深部を目指して冒険します。</p>
+              </div>
+            </details>
+
+            <details class="work-card">
+              <summary>ゆるキャン△</summary>
+              <div class="work-text">
+                <p><strong>感想：</strong>自然の景色と穏やかな雰囲気が心地よい作品です。</p>
+                <p><strong>内容：</strong>女子高校生たちが各地でキャンプを楽しみます。</p>
+              </div>
+            </details>
+
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+
+    <!-- 
+         ⑥ 好きな音楽
+         年代やジャンルをクリックすると曲の一覧が表示されます
+     -->
+    <section class="section" id="music">
+      <div class="container">
+
+        <p class="section-kicker">FAVORITE MUSIC</p>
+        <h2>好きな音楽</h2>
+
+        <p class="section-lead">
+          最近よく聴く曲から、年代別・ジャンル別にまとめました。
+        </p>
+
+        <div class="music-list">
+
+          <details class="music-card">
+            <summary>最近よく聴く曲</summary>
+            <ul>
+              <li>米津玄師「夜鷹」</li>
+              <li>米津玄師「JANE DOE」</li>
+              <li>米津玄師「IRIS OUT」</li>
+              <li>米津玄師「KICK BACK」</li>
+              <li>King Gnu「TWILIGHT!!!」</li>
+              <li>King Gnu「硝子窓」</li>
+              <li>King Gnu「It's a small world」</li>
+              <li>King Gnu「千両役者」</li>
+              <li>King Gnu「ユーモア」</li>
+              <li>Vaundy「トドメの一撃」</li>
+              <li>Vaundy「飛ぶ時」</li>
+              <li>Vaundy「踊り子」</li>
+              <li>藤井 風「祭り」</li>
+              <li>藤井 風「Overprotected」</li>
+              <li>藤井 風「Prema」</li>
+              <li>キタニタツヤ「火種」</li>
+              <li>キタニタツヤ「青のすみか」</li>
+              <li>YOASOBI「RGB」</li>
+              <li>NewJeans「ETA」</li>
+              <li>milet「Higher」</li>
+              <li>milet・Aimer・幾田りら「おもかげ」</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>2020年代</summary>
+            <ul>
+              <li>King Gnu「Hakujitsu」</li>
+              <li>宇多田ヒカル「Mine or Yours」</li>
+              <li>宇多田ヒカル「Somewhere Near Marseilles」</li>
+              <li>サカナクション「怪獣」</li>
+              <li>藤井 風「優しさ」</li>
+              <li>椎名林檎「W●RK」</li>
+              <li>kiki vivi lily「Stay My Boy」</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>2010年代</summary>
+            <ul>
+              <li>宇多田ヒカル「あなた」</li>
+              <li>宇多田ヒカル「Nijikan Dake No Vacance」</li>
+              <li>サカナクション「Nylon no Ito」</li>
+              <li>サカナクション「ミュージック」</li>
+              <li>サカナクション「ルーキー」</li>
+              <li>星野 源「桜の森」</li>
+              <li>Superfly「Tamashii Revolution」</li>
+              <li>椎名林檎「長く短い祭り」</li>
+              <li>Cocco「Jukai No Ito」</li>
+              <li>STUTS</li>
+              <li>toe</li>
+              <li>ESNO</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>2000年代</summary>
+            <ul>
+              <li>ケツメイシ「さくら」</li>
+              <li>ケツメイシ「花鳥風月」</li>
+              <li>ケツメイシ「また君に会える」</li>
+              <li>ケツメイシ「君にBUMP」</li>
+              <li>宇多田ヒカル「Fight The Blues」</li>
+              <li>大塚 愛「プラネタリウム」</li>
+              <li>m-flo「come again」</li>
+              <li>元ちとせ「ワダツミの木」</li>
+              <li>Whiteberry「夏祭り」</li>
+              <li>CAPSULE</li>
+              <li>Perfume</li>
+              <li>木蓮の涙</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>1990年代</summary>
+            <ul>
+              <li>安室奈美恵</li>
+              <li>T.M.Revolution「HOT LIMIT」</li>
+              <li>サザンオールスターズ「希望の轍」</li>
+              <li>UA「情熱」</li>
+              <li>B'z</li>
+              <li>Mr.Children</li>
+              <li>DREAMS COME TRUE</li>
+              <li>椎名林檎「丸サ」</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>1980年代</summary>
+            <ul>
+              <li>寺尾 聰「ルビーの指輪」</li>
+              <li>坂本龍一</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>1970年代以前</summary>
+            <ul>
+              <li>Stevie Wonder「Isn't She Lovely」</li>
+              <li>Cheryl Lynn「Got To Be Real」</li>
+              <li>Miles Davis「The Doo-Bop Song」</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>洋楽</summary>
+            <ul>
+              <li>Oasis</li>
+              <li>LINKIN PARK</li>
+              <li>Coldplay</li>
+              <li>Maroon 5</li>
+              <li>Sia</li>
+              <li>Ariana Grande</li>
+              <li>Billie Eilish「ocean eyes」</li>
+              <li>Bon Jovi「It's My Life」</li>
+              <li>The Cardigans「Lovefool」</li>
+              <li>Norah Jones</li>
+              <li>Red Hot Chili Peppers</li>
+              <li>Sting「Shape Of My Heart」</li>
+              <li>Taylor Swift「Shake It Off」</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>EDM・クラブミュージック</summary>
+            <ul>
+              <li>Avicii</li>
+              <li>Daft Punk</li>
+              <li>CAPSULE</li>
+              <li>ESNO</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>アニメ・ゲーム・映画音楽</summary>
+            <ul>
+              <li>澤野弘之</li>
+              <li>坂本龍一</li>
+              <li>稲本 響</li>
+            </ul>
+          </details>
+
+          <details class="music-card">
+            <summary>ジャズ・インスト・そのほか</summary>
+            <ul>
+              <li>STUTS</li>
+              <li>toe</li>
+              <li>kiki vivi lily「Stay My Boy」</li>
+              <li>Norah Jones</li>
+              <li>Miles Davis「The Doo-Bop Song」</li>
+            </ul>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 
+         ⑦ 将来の目標
+     -->
+    <section class="section section-soft" id="goal">
+      <div class="container">
+
+        <p class="section-kicker">MY GOAL</p>
+        <h2>将来の目標</h2>
+
+        <div class="goal-card">
+          <p>
+            まずはHTML・CSS・Pythonなどの基礎を身につけ、
+            自分で考えたものを形にできるようになることが目標です。
+          </p>
+
+          <p>
+            将来はAIやプログラミングの知識を活用し、
+            人の役に立つサービスや仕組みを作れるようになりたいです。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- 
+       ⑧ 最後のメッセージ
+       画像の場所：
+       imagesフォルダに img_umi2.jpeg を入れる。
+       背景画像はstyle.cssの .closing で指定。
+   -->
+  <footer class="closing">
+    <div class="closing-overlay">
+
+      <p class="closing-small">THANK YOU FOR VISITING</p>
+
+      <h2>
+        最後まで見ていただき、<br>
+        ありがとうございました。
+      </h2>
+
+      <p>
+        共通する趣味や好きな作品があれば、<br>
+        気軽に話しかけてもらえるとうれしいです。
+      </p>
+
+      <a href="#top" class="back-top">
+        ページの最初へ戻る
+      </a>
+
+      <small>© 2026 Jun</small>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,861 @@
+@charset "UTF-8";
+
+/* 
+   1. 色の設定
+   海と景色を意識した色 
+*/
+
+:root {
+  --deep-blue: #10283d;
+  --main-blue: #24557d;
+  --light-blue: #dcecf7;
+  --soft-blue: #eef5fb;
+  --gold: #c7a45a;
+  --border: #b8ccdc;
+  --text: #303b45;
+  --sub-text: #68737e;
+  --white: #ffffff;
+  --background: #f3f7fa;
+}
+
+
+/* 
+   2. ページ全体
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 105px;
+}
+
+body {
+  margin: 0;
+
+  color: var(--text);
+  background-color: var(--background);
+
+  font-family:
+    "Zen Maru Gothic",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    Meiryo,
+    sans-serif;
+
+  line-height: 1.8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* 
+   3. 共通部分
+ */
+
+.container {
+  width: 92%;
+  max-width: 1040px;
+
+  margin: 0 auto;
+}
+
+.section {
+  padding: 85px 0;
+
+  text-align: center;
+}
+
+.section-soft {
+  background-color: var(--soft-blue);
+}
+
+.section-dark {
+  color: var(--white);
+  background-color: var(--deep-blue);
+}
+
+.section-cinema {
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      rgba(9, 24, 38, 0.98),
+      rgba(17, 43, 65, 0.98)
+    );
+}
+
+.section-kicker {
+  margin: 0 0 5px;
+
+  color: #6d91af;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.section-kicker-light {
+  color: #9fc3dd;
+}
+
+.section-kicker-gold {
+  color: var(--gold);
+}
+
+.section h2 {
+  margin: 0 0 22px;
+
+  color: var(--deep-blue);
+
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+}
+
+.light-heading {
+  color: var(--white) !important;
+}
+
+.section-lead {
+  max-width: 760px;
+
+  margin: -4px auto 38px;
+
+  color: var(--sub-text);
+}
+
+.section-lead-light {
+  color: #d1dee8;
+}
+
+
+/*
+   4. トップ画面
+*/
+
+.hero {
+  min-height: 100vh;
+
+  /*
+    ここがトップ画像の場所です。
+    imagesフォルダへ img_umi1.jpeg を入れる。
+  */
+  background:
+    linear-gradient(
+      rgba(8, 26, 43, 0.25),
+      rgba(8, 22, 37, 0.72)
+    ),
+    url("../img/img_umi1.jpeg") center / cover no-repeat;
+}
+
+.hero-overlay {
+  display: flex;
+  min-height: 100vh;
+
+  padding: 40px 20px;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: var(--white);
+
+  text-align: center;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+.hero-label {
+  margin: 0 0 10px;
+
+  color: #f0d69a;
+
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(2.2rem, 7vw, 4.2rem);
+  line-height: 1.3;
+}
+
+.hero-copy {
+  margin: 22px 0 30px;
+
+  font-size: clamp(1rem, 2.5vw, 1.22rem);
+}
+
+.hero-button,
+.back-top {
+  display: inline-block;
+
+  padding: 12px 26px;
+
+  border: 2px solid var(--white);
+  border-radius: 6px;
+
+  background-color: rgba(255, 255, 255, 0.12);
+
+  font-weight: 700;
+}
+
+/*
+   5. 画像付き上部メニュー
+ */
+
+.page-nav {
+  padding: 24px 20px;
+
+  background-color: var(--deep-blue);
+  border-bottom: 1px solid #486781;
+}
+
+.page-nav ul {
+  display: grid;
+
+  width: 92%;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.page-nav li {
+  overflow: hidden;
+
+  background-color: var(--white);
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.page-nav a {
+  display: flex;
+  height: 100%;
+
+  flex-direction: column;
+
+  color: var(--deep-blue);
+
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-nav img {
+  width: 100%;
+  height: 90px;
+
+  object-fit: cover;
+}
+
+.page-nav span {
+  display: flex;
+  min-height: 50px;
+
+  padding: 8px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/*
+   6. 自己紹介
+*/
+
+.intro-card,
+.goal-card {
+  max-width: 820px;
+
+  margin: 0 auto;
+  padding: 38px;
+
+  background-color: var(--white);
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  box-shadow: 0 10px 28px rgba(24, 53, 76, 0.1);
+}
+
+.intro-card h3 {
+  margin-top: 0;
+
+  color: var(--main-blue);
+
+  font-size: 1.35rem;
+}
+
+.profile-points {
+  margin-top: 26px;
+  padding: 20px;
+
+  background-color: var(--light-blue);
+
+  border-left: 5px solid var(--gold);
+  border-radius: 6px;
+}
+
+.profile-points p {
+  margin: 6px 0;
+}
+
+
+/*
+   7. 住んだ場所
+*/
+
+.place-list {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.place-card {
+  padding: 26px 18px;
+
+  background-color: #17364e;
+
+  border: 1px solid #3d607b;
+  border-radius: 8px;
+}
+
+.place-card span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--gold);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.place-card h3 {
+  margin: 0 0 10px;
+}
+
+.place-card p {
+  margin: 0;
+
+  color: #cbd9e3;
+
+  font-size: 0.92rem;
+}
+
+
+/*
+   8. 写真ギャラリー
+*/
+
+.gallery-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.gallery-list li {
+  width: calc((100% - 24px) / 3);
+
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-list img {
+  width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-text {
+  padding: 8px 18px 20px;
+}
+
+.gallery-text h3 {
+  margin: 0 0 8px;
+
+  color: var(--deep-blue);
+
+  font-size: 1.08rem;
+}
+
+.gallery-text p {
+  margin: 0;
+
+  color: var(--sub-text);
+
+  font-size: 0.92rem;
+  text-align: left;
+}
+
+
+/*
+   9. 趣味
+*/
+
+.two-column {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.simple-card {
+  padding: 30px;
+
+  background-color: var(--white);
+
+  border: 1px solid var(--border);
+  border-radius: 9px;
+
+  box-shadow: 0 7px 18px rgba(18, 44, 66, 0.07);
+}
+
+.simple-card h3 {
+  margin-top: 0;
+
+  color: var(--main-blue);
+}
+
+.center-list li {
+  padding: 6px 0;
+
+  border-bottom: 1px dashed #d8e3eb;
+}
+
+
+/*
+   10. 作品
+*/
+
+.genre-card {
+  overflow: hidden;
+
+  max-width: 960px;
+  margin: 0 auto 20px;
+
+  border: 1px solid #55758f;
+  border-radius: 8px;
+
+  background-color: #153249;
+}
+
+.genre-title {
+  position: relative;
+
+  padding: 22px 65px 22px 24px;
+
+  color: var(--white);
+  background-color: #173f5d;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: left;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.genre-title::-webkit-details-marker,
+.subgenre-card summary::-webkit-details-marker,
+.work-card summary::-webkit-details-marker,
+.music-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.genre-title::after {
+  position: absolute;
+
+  top: 50%;
+  right: 24px;
+
+  content: "＋";
+
+  color: var(--gold);
+
+  font-size: 1.9rem;
+
+  transform: translateY(-50%);
+}
+
+.genre-card[open] > .genre-title::after {
+  content: "−";
+}
+
+.genre-content {
+  padding: 18px;
+
+  background-color: #10283d;
+}
+
+.subgenre-card {
+  overflow: hidden;
+
+  margin-bottom: 14px;
+
+  border: 1px solid #496c87;
+  border-radius: 6px;
+}
+
+.subgenre-card > summary {
+  position: relative;
+
+  padding: 18px 55px 18px 20px;
+
+  color: #f4e5bd;
+  background-color: #234f70;
+
+  font-weight: 700;
+  text-align: left;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.subgenre-card > summary::after {
+  position: absolute;
+
+  top: 50%;
+  right: 20px;
+
+  content: "＋";
+
+  color: var(--white);
+
+  font-size: 1.5rem;
+
+  transform: translateY(-50%);
+}
+
+.subgenre-card[open] > summary::after {
+  content: "−";
+}
+
+.works-list {
+  display: grid;
+
+  gap: 12px;
+
+  padding: 14px;
+}
+
+.work-card {
+  overflow: hidden;
+
+  background-color: var(--white);
+
+  border: 1px solid #8eaabf;
+  border-radius: 5px;
+}
+
+.work-card > summary {
+  position: relative;
+
+  padding: 16px 50px 16px 18px;
+
+  color: var(--deep-blue);
+  background-color: #e9f1f7;
+
+  font-weight: 700;
+  text-align: left;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.work-card > summary::after {
+  position: absolute;
+
+  top: 50%;
+  right: 18px;
+
+  content: "＋";
+
+  color: var(--main-blue);
+
+  font-size: 1.4rem;
+
+  transform: translateY(-50%);
+}
+
+.work-card[open] > summary::after {
+  content: "−";
+}
+
+.work-text {
+  padding: 18px 22px;
+
+  color: var(--text);
+  background-color: var(--white);
+
+  text-align: left;
+}
+
+.work-text p {
+  margin: 0;
+  padding: 8px 0;
+
+  border-bottom: 1px dashed #d8e3eb;
+}
+
+.work-text p:last-child {
+  border-bottom: none;
+}
+
+.work-text strong {
+  color: var(--main-blue);
+}
+
+
+/*
+   11. 音楽
+*/
+
+.music-list {
+  display: grid;
+
+  max-width: 920px;
+  margin: 0 auto;
+
+  gap: 15px;
+}
+
+.music-card {
+  overflow: hidden;
+
+  background-color: var(--white);
+
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+
+.music-card summary {
+  position: relative;
+
+  padding: 20px 58px 20px 22px;
+
+  color: var(--deep-blue);
+  background-color: var(--light-blue);
+
+  font-weight: 700;
+  text-align: left;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.music-card summary::after {
+  position: absolute;
+
+  top: 50%;
+  right: 22px;
+
+  content: "＋";
+
+  color: var(--main-blue);
+
+  font-size: 1.6rem;
+
+  transform: translateY(-50%);
+}
+
+.music-card[open] summary::after {
+  content: "−";
+}
+
+.music-card ul {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 0 28px;
+
+  padding: 20px 24px 24px;
+}
+
+.music-card li {
+  padding: 8px 4px;
+
+  border-bottom: 1px dashed #d8e3eb;
+}
+
+
+/*
+   12. 最後の画面
+*/
+
+.closing {
+  min-height: 72vh;
+
+  /*
+    ここが最後の背景画像です。
+    imagesフォルダへ img_umi2.jpeg を入れる。
+  */
+  background:
+    linear-gradient(
+      rgba(8, 24, 40, 0.35),
+      rgba(5, 16, 28, 0.76)
+    ),
+    url("../img/img_umi2.jpeg") center / cover no-repeat;
+}
+
+.closing-overlay {
+  display: flex;
+  min-height: 72vh;
+
+  padding: 70px 20px 38px;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: var(--white);
+
+  text-align: center;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+.closing-small {
+  margin: 0 0 8px;
+
+  color: #f0d69a;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.closing h2 {
+  margin: 0;
+
+  font-size: clamp(1.9rem, 5vw, 3rem);
+}
+
+.closing p {
+  margin: 20px 0 26px;
+}
+
+.closing small {
+  margin-top: 32px;
+}
+
+
+
+
+/*
+   13. スマートフォン
+*/
+
+@media screen and (max-width: 600px) {
+
+  html {
+    scroll-padding-top: 150px;
+  }
+
+  .section {
+    padding: 62px 0;
+  }
+
+  .page-nav {
+    padding: 9px 8px;
+  }
+
+  .page-nav ul {
+    gap: 6px;
+  }
+
+  .page-nav a {
+    padding: 6px 9px;
+
+    font-size: 0.76rem;
+  }
+
+  .intro-card,
+  .goal-card {
+    padding: 27px 20px;
+  }
+
+  .place-list {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-list {
+    flex-direction: column;
+  }
+
+  .gallery-list li {
+    width: 100%;
+  }
+
+  .gallery-list img {
+    height: 100px;
+  }
+
+  .genre-title {
+    padding: 18px 55px 18px 17px;
+
+    font-size: 1.15rem;
+  }
+
+  .genre-content {
+    padding: 12px;
+  }
+
+  .works-list {
+    padding: 10px;
+  }
+
+  .work-card > summary {
+    padding: 15px 45px 15px 14px;
+
+    font-size: 0.94rem;
+  }
+
+  .work-text {
+    padding: 15px 16px;
+
+    font-size: 0.9rem;
+  }
+
+  .music-card ul {
+    grid-template-columns: 1fr;
+
+    padding: 14px 18px 20px;
+  }
+}
+
+
